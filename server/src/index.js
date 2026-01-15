@@ -15,7 +15,7 @@ app.use(cors({
     credentials: true
 }))
 
-const Port = 5000 || process.env.PORT
+const Port = process.env.PORT || 8000
 
 // middleware
 app.use(express.json())
