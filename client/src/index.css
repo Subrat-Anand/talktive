@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global.css / index.css */
+.scrollbar-none {
+  scrollbar-width: none;        /* Firefox */
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;                /* Chrome, Edge, Safari */
+}
+
+.EmojiPickerReact {
+  max-height: 55vh !important;
+}
+
+/* Emoji picker container fix */
+.EmojiPickerReact {
+  width: 100% !important;
+  max-width: 100vw !important;
+  box-sizing: border-box !important;
+  overflow-x: hidden !important;
+}
+
+/* Inner scroll fix */
+.EmojiPickerReact * {
+  box-sizing: border-box !important;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 768px) {
+  .EmojiPickerReact {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* @keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.25s ease-out forwards;
+} */
