@@ -10,6 +10,8 @@ const messageRoute = require('./routes/message.route')
 const createSocketServer = require('./web/socket')
 const app = express()
 
+app.set("trust proxy", 1); // 🔥 THIS IS THE FIX
+
 app.use(cors({
     origin: "https://frontdms.onrender.com",
     credentials: true
