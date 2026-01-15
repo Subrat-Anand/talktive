@@ -12,7 +12,7 @@ import useGetMyChat from "./hooks/useGetMyChat";
 
 import { initSocket } from "./socket/Socket";
 
-export const ServerUrl = "http://localhost:5000";
+export const ServerUrl = "https://dms-1s8n.onrender.com";
 
 const App = () => {
   // 🔹 fetch user & chats
